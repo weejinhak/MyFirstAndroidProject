@@ -1,0 +1,1 @@
+include ':app', ':volley', ':spring-android-rest-template-1.0.1.RELEASE'

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/l_telerikLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_myangel"
+        android:layout_marginTop="30dp" android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/l_appName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_below="@id/l_telerikLogo"
+        android:text="CLASS-IC"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" android:layout_marginTop="5dp"/>
+    <TextView
+        android:id="@+id/l_appDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_appName"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="for our class"
+        android:gravity="center_horizontal" android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:hint="Email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_appDescription"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColorHint="#42000000"
+        />
+    <EditText
+        android:id="@+id/etPassword"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:padding="12dp"
+        android:hint="Password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmail"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="1dp"
+        android:textColorHint="#42000000"
+        />
+    <Button android:id="@+id/l_login"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Login"
+        android:background="#4d6dfc"
+        android:clickable="true"
+        android:layout_below="@+id/etPassword"
+        android:layout_centerHorizontal="true" />
+
+
+    <LinearLayout
+        android:id="@+id/l_socialButtonsContainer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/l_login"
+        android:baselineAligned="false"
+        android:visibility="visible"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:dividerPadding="5dp"
+        android:layout_centerHorizontal="true">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/l_createNewUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l_socialButtonsContainer"
+        android:gravity="center_horizontal"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#696969"
+        android:textSize="16dp"
+        android:text="Don't have an account?"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:id="@+id/l_issuerSign"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="#696969"
+        android:gravity="center_horizontal"
+        android:text="© 2017 Team1 Inc."
+        />
+
+</RelativeLayout>

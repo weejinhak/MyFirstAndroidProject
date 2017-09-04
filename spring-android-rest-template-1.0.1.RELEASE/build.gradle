@@ -1,0 +1,2 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('spring-android-rest-template-1.0.1.RELEASE.jar'))
